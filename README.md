@@ -38,7 +38,7 @@ report.md	Rapport om databasdesign och optimering.
 
 ## 🛠 Installation & Setup
 
-###Följ dessa steg för att köra projektet lokalt:
+### Följ dessa steg för att köra projektet lokalt:
 
 
 ###  Klona projektet  
@@ -110,7 +110,7 @@ python main.py
 ```
 
 **Exempel på att använda Python-funktioner i queries.py:**
-
+````
 from database import get_db
 from queries import get_all_products, get_products_by_brand, get_customer_orders
 
@@ -118,6 +118,7 @@ db = next(get_db())
 products = get_all_products(db)
 brand_products = get_products_by_brand(db, brand_id=1)
 customer_orders = get_customer_orders(db, customer_id=1)
+````
 
 
 **SQL-filer** (queries_advanced.sql och optimization.sql) kan köras direkt i PostgreSQL för avancerade analyser och optimeringar.
@@ -130,7 +131,7 @@ Hitta kunder som spenderat mest totalt: Index idx_orders_customer_id på orders.
 
 Att lägga till index på kolumner som används i JOIN och WHERE-klausuler kan avsevärt förbättra prestanda.
 
-**Struktur**
+## Struktur
 electronics_mapp/
 ├── main.py
 ├── models.py
@@ -145,6 +146,7 @@ electronics_mapp/
 ├── README.md
 └── report.md
 
-**Licens**
+
+## Licens
 
 Detta projekt är för kursbruk och inte licensierat för kommersiell användning.
