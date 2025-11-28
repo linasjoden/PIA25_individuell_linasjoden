@@ -121,7 +121,8 @@ customer_orders = get_customer_orders(db, customer_id=1)
 ````
 
 
-## SQL-filer (queries_advanced.sql och optimization.sql) kan köras direkt i PostgreSQL för avancerade analyser och optimeringar.
+## SQL-filer 
+(queries_advanced.sql och optimization.sql) kan köras direkt i PostgreSQL för avancerade analyser och optimeringar.
 
 
 
