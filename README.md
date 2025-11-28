@@ -36,22 +36,22 @@ report.md	Rapport om databasdesign och optimering.
 
 
 
-### 🛠 Installation & Setup
+## 🛠 Installation & Setup
 
-Följ dessa steg för att köra projektet lokalt:
+###Följ dessa steg för att köra projektet lokalt:
 
 
 ###  Klona projektet  
-
+```
 git clone <repo-url>
 cd <mappnamn>
-
+```
 
 
 ### Skapa och aktivera en virtuell miljö
 
 **Windows PowerShell**
-```powershell
+```
 python -m venv venv
 .\venv\Scripts\Activate.ps1
 ```
