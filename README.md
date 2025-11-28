@@ -1,11 +1,11 @@
 #  Electronics Project
-Beskrivning
+**Beskrivning**
 
 Detta projekt är ett system för att hantera elektronikprodukter, kunder och beställningar.
 Det använder Python, SQLAlchemy ORM och en PostgreSQL-databas (electronics_db).
 Projektet inkluderar även avancerade SQL-frågor och databaspoptimering.
 
-Funktioner
+**Funktioner**
 
 Hämta alla produkter, produkter per tillverkare och kunders ordrar via Python-funktioner (queries.py).
 
@@ -17,8 +17,8 @@ Test av databasanslutning (test_connection.py).
 
 Huvudprogram (main.py) som demonstrerar hur data hämtas och visas.
 
-Filöversikt
-Fil	Beskrivning
+ ## Filöversikt
+Filbeskrivning
 main.py	Startpunkt för programmet. Hämtar och skriver ut exempeldata.
 database.py	Skapar SQLAlchemy-engine och session. Hanterar anslutning till PostgreSQL.
 models.py	ORM-modeller (Product, Customer, Order osv.).
