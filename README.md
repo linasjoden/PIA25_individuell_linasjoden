@@ -21,18 +21,18 @@ Huvudprogram (main.py) som demonstrerar hur data hämtas och visas.
 
 ### Filbeskrivning
 
-main.py	Startpunkt för programmet. Hämtar och skriver ut exempeldata.
-database.py	Skapar SQLAlchemy-engine och session. Hanterar anslutning till PostgreSQL.
-models.py	ORM-modeller (Product, Customer, Order osv.).
-queries.py	Python-funktioner som frågar databasen via SQLAlchemy.
-queries_advanced.sql	Avancerade SQL-frågor: subqueries, window functions och CASE.
-optimization.sql	Indexoptimering och EXPLAIN ANALYZE.
-test_connection.py	Testar databasanslutningen och skapar session.
-schema.sql	Skapar databastabeller.
-testdata.sql	Infogar testdata i databasen.
-requirements.txt	Projektberoenden.
-README.md	Dokumentation.
-report.md	Rapport om databasdesign och optimering.
+***main.py***	Startpunkt för programmet. Hämtar och skriver ut exempeldata.
+***database.py***	Skapar SQLAlchemy-engine och session. Hanterar anslutning till PostgreSQL.
+***models.py***	ORM-modeller (Product, Customer, Order osv.).
+***queries.py***	Python-funktioner som frågar databasen via SQLAlchemy.
+***queries_advanced.sql***Avancerade SQL-frågor: subqueries, window functions och CASE.
+***optimization.sql***	Indexoptimering och EXPLAIN ANALYZE.
+***test_connection.py***	Testar databasanslutningen och skapar session.
+***schema.sql***	Skapar databastabeller.
+***testdata.sql***	Infogar testdata i databasen.
+***requirements.txt***	Projektberoenden.
+***README.md***	Dokumentation. (Den här filen)
+***report.md***	Rapport om databasdesign och optimering.
 
 
 
