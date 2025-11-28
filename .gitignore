@@ -1,0 +1,14 @@
+# Miljövariabler
+.env
+
+# Python cachefiler
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtuella miljöer
+.venv/
+.elec/
+env/
+venv/
