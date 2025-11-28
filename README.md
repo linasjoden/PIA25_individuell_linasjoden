@@ -121,15 +121,19 @@ customer_orders = get_customer_orders(db, customer_id=1)
 ````
 
 
-**SQL-filer** (queries_advanced.sql och optimization.sql) kan köras direkt i PostgreSQL för avancerade analyser och optimeringar.
+## SQL-filer (queries_advanced.sql och optimization.sql) kan köras direkt i PostgreSQL för avancerade analyser och optimeringar.
 
-**Databasoptimering (från report.md)**
+
+
+## Databasoptimering (från report.md)**
 
 Räkna antal produkter per tillverkare: Index idx_products_brand_id på products.brand_id förbättrar prestanda på join och aggregering.
 
 Hitta kunder som spenderat mest totalt: Index idx_orders_customer_id på orders.customer_id snabbar upp SUM och GROUP BY.
 
 Att lägga till index på kolumner som används i JOIN och WHERE-klausuler kan avsevärt förbättra prestanda.
+
+
 
 ## Struktur
 electronics_mapp/
