@@ -17,9 +17,9 @@ Test av databasanslutning (test_connection.py).
 
 Huvudprogram (main.py) för att visa produkter och koppla till databasen.
 
-Filer och beskrivning
-Fil	Beskrivning
-main.py	Startpunkt för programmet. Hämtar och skriver ut produkter och ordrar med exempel.
+**Filer och beskrivning**
+
+main.py är startpunkt för programmet. Hämtar och skriver ut produkter och ordrar med exempel.
 database.py	Skapar SQLAlchemy-engine och session, hanterar anslutning till PostgreSQL.
 models.py	Python-klasser som motsvarar databastabeller (Product, Customer, Order, etc.).
 queries.py	Python-funktioner för databasfrågor med SQLAlchemy ORM.
@@ -31,7 +31,8 @@ testdata.sql	Infogar testdata i databasen.
 requirements.txt	Lista över Python-beroenden.
 README.md	Denna fil.
 report.md	Rapport om databasdesign och optimering.
-Installation
+
+**Installation**
 
 **Klona repot:**
 
