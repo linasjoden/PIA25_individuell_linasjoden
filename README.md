@@ -98,14 +98,16 @@ DB_ECHO=False
 ## Användning
 
 ### Testa databasanslutning
-
+ 
+```
 python test_connection.py
+```
 
 
 ### Kör huvudprogrammet
+```
 python main.py
-
-
+```
 
 **Exempel på att använda Python-funktioner i queries.py:**
 
