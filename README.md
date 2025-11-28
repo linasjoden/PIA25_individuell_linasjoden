@@ -20,48 +20,77 @@ Huvudprogram (main.py) för att visa produkter och koppla till databasen.
 **Filer och beskrivning**
 
 main.py är startpunkt för programmet. Hämtar och skriver ut produkter och ordrar med exempel.
-database.py	Skapar SQLAlchemy-engine och session, hanterar anslutning till PostgreSQL.
-models.py	Python-klasser som motsvarar databastabeller (Product, Customer, Order, etc.).
-queries.py	Python-funktioner för databasfrågor med SQLAlchemy ORM.
-queries_advanced.sql	Avancerade SQL-frågor: subqueries, window functions och CASE.
-optimization.sql	Optimering av queries med index och EXPLAIN ANALYZE.
-test_connection.py	Testar databasanslutning och returnerar en session.
-schema.sql	Skapar databastabeller (PostgreSQL).
-testdata.sql	Infogar testdata i databasen.
-requirements.txt	Lista över Python-beroenden.
-README.md	Denna fil.
-report.md	Rapport om databasdesign och optimering.
+**database.py**	Skapar SQLAlchemy-engine och session, hanterar anslutning till PostgreSQL.
+**models.py**	Python-klasser som motsvarar databastabeller (Product, Customer, Order, etc.).
+**queries.py**	Python-funktioner för databasfrågor med SQLAlchemy ORM.
+**queries_advanced.sql**	Avancerade SQL-frågor: subqueries, window functions och CASE.
+**optimization.sql**	Optimering av queries med index och EXPLAIN ANALYZE.
+**test_connection.py**	Testar databasanslutning och returnerar en session.
+**schema.sql**	Skapar databastabeller (PostgreSQL).
+**testdata.sql**	Infogar testdata i databasen.
+**requirements.txt**	Lista över Python-beroenden.
+**README.md**	Denna fil.
+**report.md**	Rapport om databasdesign och optimering.
 
 **Installation**
 
-**Klona repot:**
+### 🛠 Installation & Setup
 
-git clone https://github.com/linasjoden/PIA25_individuell_linasjoden.git
-
-
-**Skapa en virtuell miljö:**
-
-python -m venv .elec
+Följ dessa steg för att köra projektet lokalt:
 
 
-**Aktivera miljön:**
+###  Klona projektet  
 
-Windows PowerShell: .\.elec\Scripts\Activate.ps1
+git clone <repo-url>
+cd <mappnamn>
 
-Git Bash: source .elec/Scripts/activate
 
-**Installera beroenden:**
 
+### Skapa och aktivera en virtuell miljö
+
+**Windows PowerShell**
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+```
+
+**Git Bash**
+```bash
+python -m venv venv
+source venv/Scripts/activate
+```
+
+**Linux / macOS**
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### Installera beroenden
+```bash
 pip install -r requirements.txt
+```
 
+---
 
-Skapa databasen i PostgreSQL och kör schema.sql och testdata.sql för att skapa tabeller och fylla på testdata.
+### Skapa och fyll databasen
+1. Skapa databasen i PostgreSQL (t.ex. via psql eller pgAdmin).
+2. Kör filerna:  
+   - `schema.sql`  
+   - `testdata.sql`  
 
-Skapa .env med anslutningsinfo:
+---
 
+### Skapa `.env`-fil
+Skapa en `.env` i projektroten med följande innehåll:
 
+```
 DATABASE_URL=postgresql://<användare>:<lösenord>@localhost:5432/electronics_db
 DB_ECHO=False
+```
+
 
 
 **Användning**
