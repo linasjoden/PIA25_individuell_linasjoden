@@ -18,7 +18,9 @@ Test av databasanslutning (test_connection.py).
 Huvudprogram (main.py) som demonstrerar hur data hämtas och visas.
 
  ## Filöversikt
+
 ### Filbeskrivning
+
 main.py	Startpunkt för programmet. Hämtar och skriver ut exempeldata.
 database.py	Skapar SQLAlchemy-engine och session. Hanterar anslutning till PostgreSQL.
 models.py	ORM-modeller (Product, Customer, Order osv.).
